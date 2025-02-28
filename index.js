@@ -3,9 +3,6 @@ let buttons = ["button-1", "button-2", "button-3", "button-4", "button-5", "butt
 
 let roundWon = false;
 
-let checkWinCondition;
-let lastCheckedWinCondition;
-
 const winConditions = [["button-1", "button-2", "button-3"],
   ["button-4", "button-5", "button-6"],
   ["button-7", "button-8", "button-9"],
@@ -14,6 +11,8 @@ const winConditions = [["button-1", "button-2", "button-3"],
   ["button-3", "button-6", "button-9"],
   ["button-1", "button-5", "button-9"],
   ["button-3", "button-5", "button-7"]];
+
+document.getElementById("reset").addEventListener("click", resetColour);
 
 resetColour();
 
